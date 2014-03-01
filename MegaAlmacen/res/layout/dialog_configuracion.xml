@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="58dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="32dp"
+        android:layout_toLeftOf="@+id/linearLayout3"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout3"
+        android:layout_alignRight="@+id/linearLayout3"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/portT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/portS" />
+
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ems="10"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout1"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_marginBottom="14dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/ipT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ipS" />
+
+        <EditText
+            android:id="@+id/ip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ems="10"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="22dp"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:onClick="OnClick"
+        android:text="@string/botonIPS" />
+
+</RelativeLayout>

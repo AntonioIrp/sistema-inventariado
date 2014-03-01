@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, SendValuesActivity!</string>
+    <string name="app_name">MegaAlmacén</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_productos">Mis Productos</string>
+    <string name="title_activity_insertar_producto">Añadir Nuevo Producto</string>
+    <string name="altaP">Alta de producto</string>
+    <string name="nombreP">Nombre</string>
+    <string name="tipoP">Tipo</string>
+    <string name="descripcionP">Descripción</string>
+    <string name="ubicacionP">Ubicación</string>
+    <string name="urlIm">URL Imagen</string>
+    <string name="unidadesP">Unidades</string>
+    <string name="descripP">Descripcion de Producto</string>
+    <string name="userP">Usuario:</string>
+    <string name="passP">Contraseña:</string>
+    <string name="LoginP">Conectar</string>
+    <string name="ayuda1P">Bienvenido a la ayuda, a traves de estas lineas le guiaremos sobre como usar correctamente la aplicacion.</string>
+    <string name="acercade1P">El equipo que hace posible Megaalmacen es:</string>
+    <string name="acercade2P">2012</string>
+    <string name="CerrarAcercaDeP">"Volver "</string>
+    <string name="title_activity_acerca_de">Acerca De</string>
+    <string name="AgregarP">Agrege un nuevo producto</string>
+    <string name="encontradoP">Se han encontrado estos productos:</string>
+    <string name="title_modificar_producto">Modificar un producto existente</string>
+    <string name="Comercios_list">Acceda a sus comercios:</string>
+    <string name="confirmacionP">¿Desea eliminar este elemento?...Si? No? ...Tal vez?</string>
+    <string name="confTCPIP">Configuración de TCP/IP</string>
+    <string name="ipS">IP</string>
+    <string name="portS">Puerto</string>
+    <string name="botonIPS">Aceptar</string>
+    <string name="nombre1P">Antonio Isaac Roldán Peña</string>
+    <string name="nombre2P">José Carlos Rodríguez Mora</string>
+    <string name="ujaenP">Universidad de Jaén</string>
+    <string name="ingenieP">Ingenieria de Telecomunicación</string>
+    <string name="n1">Desde la pantalla de login pulsar el botón \"Menú\" y acceder a la configuración de la IP</string>
+    <string name="n11">1. Acceder al menú de configuración TCP/IP desde la pantalla del login pulsando en la tecla del dispositivo \"Menú\"</string>
+    <string name="n2">2. Elegir la IP donde se encuentra el servidor y el puerto donde se atiende el servicio</string>
+    <string name="n3">3. Logearse en la aplicación. A continuación se le muestran sus comercios</string>
+    <string name="n4">4. Seleccionado el comercio, aparecen sus productos. Si selecciona el simbolo en cruz superior se abre un menú para dar de alta al produco. Se rellan y se acepta.</string>
+    <string name="n5">5. Si se selecciona un elemento de la lista de productos con un click corto se accede a la descripcion del producto y permite su modificación.</string>
+    <string name="n6">6. Si se mantiene un elemento pulsado de la lista de productos se da la opción de eliminar el producto de la lista. Necesita confirmación.</string>
+    <string name="n7">7. Para salir de la aplicación es suficiente con pulsar el botón \"back\" hasta salir de ella. En la pantalla de login se mostrará la confirmación de salir al pulsar el botón \"back\"</string>
+    <string name="cblack">black</string>
+
+</resources>

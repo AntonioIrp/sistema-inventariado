@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.testprops.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws.testprops.com" xmlns:intf="http://ws.testprops.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by Apache Axis version: 1.4
+Built on Apr 22, 2006 (06:55:48 PDT)-->
+ <wsdl:types>
+  <schema elementFormDefault="qualified" targetNamespace="http://ws.testprops.com" xmlns="http://www.w3.org/2001/XMLSchema">
+   <element name="testMyProps">
+    <complexType>
+     <sequence>
+      <element name="fname" type="impl:Tipos"/>
+      <element name="lname" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+   <complexType name="Tipos">
+    <sequence>
+     <element name="nombre" nillable="true" type="xsd:string"/>
+    </sequence>
+   </complexType>
+   <element name="testMyPropsResponse">
+    <complexType>
+     <sequence>
+      <element name="testMyPropsReturn" type="xsd:string"/>
+     </sequence>
+    </complexType>
+   </element>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="testMyPropsResponse">
+
+      <wsdl:part element="impl:testMyPropsResponse" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:message name="testMyPropsRequest">
+
+      <wsdl:part element="impl:testMyProps" name="parameters">
+
+      </wsdl:part>
+
+   </wsdl:message>
+
+   <wsdl:portType name="TestPropts">
+
+      <wsdl:operation name="testMyProps">
+
+         <wsdl:input message="impl:testMyPropsRequest" name="testMyPropsRequest">
+
+       </wsdl:input>
+
+         <wsdl:output message="impl:testMyPropsResponse" name="testMyPropsResponse">
+
+       </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:portType>
+
+   <wsdl:binding name="TestProptsSoapBinding" type="impl:TestPropts">
+
+      <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+      <wsdl:operation name="testMyProps">
+
+         <wsdlsoap:operation soapAction=""/>
+
+         <wsdl:input name="testMyPropsRequest">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:input>
+
+         <wsdl:output name="testMyPropsResponse">
+
+            <wsdlsoap:body use="literal"/>
+
+         </wsdl:output>
+
+      </wsdl:operation>
+
+   </wsdl:binding>
+
+   <wsdl:service name="TestProptsService">
+
+      <wsdl:port binding="impl:TestProptsSoapBinding" name="TestPropts">
+
+         <wsdlsoap:address location="http://localhost:8080/TestProperties/services/TestPropts"/>
+
+      </wsdl:port>
+
+   </wsdl:service>
+
+</wsdl:definitions>
